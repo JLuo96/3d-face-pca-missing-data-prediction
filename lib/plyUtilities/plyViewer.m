@@ -1,7 +1,14 @@
-function polyViewer(ply)
+function p=polyViewer(ply)
+%function p=polyViewer(ply)
+%
+% Downloaded from matlab file exchange
+% Minor modifications from download by JED Sep 2020
+%
+
 f = figure('Tag','PolyViewer');
 p = patch(ply);
-set(p,'FaceColor','c','FaceLighting','flat','LineStyle','-');
+%set(p,'FaceColor','c','FaceLighting','flat','LineStyle','-');
+set(p,'FaceColor','c','FaceLighting','flat','LineStyle','none');
 
 ax1 = gca;
 ax1.Visible = 'off';
